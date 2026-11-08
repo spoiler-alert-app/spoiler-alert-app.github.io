@@ -1,0 +1,55 @@
+:root {
+  --green: #16a34a;
+  --green-dark: #0d7a37;
+  --ink: #0b100c;
+  --text: #1f2a24;
+  --muted: #5b6b61;
+  --bg: #f6f8f6;
+  --card: #ffffff;
+  --border: #e3e9e4;
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  color: var(--text);
+  background: var(--bg);
+  line-height: 1.6;
+}
+a { color: var(--green-dark); }
+.wrap { max-width: 760px; margin: 0 auto; padding: 0 20px; }
+header.site {
+  background: linear-gradient(135deg, #22c55e 0%, #16a34a 55%, #0d7a37 100%);
+  color: #fff;
+  padding: 28px 0;
+}
+header.site .wrap { display: flex; align-items: center; gap: 14px; }
+.logo {
+  width: 44px; height: 44px; border-radius: 12px; background: rgba(255,255,255,.18);
+  display: flex; align-items: center; justify-content: center; font-size: 24px;
+}
+header.site h1 { font-size: 22px; margin: 0; font-weight: 700; }
+header.site p { margin: 2px 0 0; opacity: .9; font-size: 14px; }
+main { padding: 36px 0 60px; }
+h1.page { font-size: 30px; margin: 0 0 6px; }
+h2 { font-size: 20px; margin: 30px 0 8px; }
+h3 { font-size: 16px; margin: 20px 0 4px; }
+.muted { color: var(--muted); }
+.card {
+  background: var(--card); border: 1px solid var(--border); border-radius: 14px;
+  padding: 20px 22px; margin: 18px 0;
+}
+.btn {
+  display: inline-block; background: var(--green); color: #fff; text-decoration: none;
+  padding: 11px 20px; border-radius: 10px; font-weight: 600; margin: 6px 8px 6px 0;
+}
+.btn.secondary { background: #fff; color: var(--green-dark); border: 1px solid var(--border); }
+ul.features { list-style: none; padding: 0; }
+ul.features li { padding: 8px 0; border-bottom: 1px solid var(--border); }
+ul.features li:last-child { border-bottom: 0; }
+.email { font-weight: 600; }
+footer { border-top: 1px solid var(--border); padding: 24px 0; color: var(--muted); font-size: 13px; }
+footer a { margin-right: 16px; }
+.small { font-size: 13px; }
+code { background: #eef2ee; padding: 1px 5px; border-radius: 5px; font-size: 13px; }
